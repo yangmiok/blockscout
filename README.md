@@ -1,3 +1,25 @@
+
+查询指定合约全部交易
+{
+  address(hash: "0x600b2eC95cE86f8B32f61D24D31aC7d7a637928a") {
+    transactions(first:5) {
+      edges {
+        node {
+          blockNumber
+          createdContractAddressHash
+          fromAddressHash
+          toAddressHash
+          gas
+          value
+          hash
+        }
+      }
+    }
+  }
+}
+
+
+
 <h1 align="center">BlockScout</h1>
 <p align="center">Blockchain Explorer for inspecting and analyzing EVM Chains.</p>
 <div align="center">
